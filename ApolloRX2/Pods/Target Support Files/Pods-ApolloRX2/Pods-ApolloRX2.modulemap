@@ -1,0 +1,6 @@
+framework module Pods_ApolloRX2 {
+  umbrella header "Pods-ApolloRX2-umbrella.h"
+
+  export *
+  module * { export * }
+}

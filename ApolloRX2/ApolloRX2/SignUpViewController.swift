@@ -18,6 +18,10 @@ class SignUpViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(image: nil, style: UIBarButtonItem.Style.plain, target: nil, action: nil)
+
+
     }
     
     @IBAction func createAccount(_ sender: Any) {

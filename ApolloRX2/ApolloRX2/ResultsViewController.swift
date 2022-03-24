@@ -26,7 +26,7 @@ class ResultsViewController: UIViewController {
 
          var title = ""
          if(percentRight <= 50) {
-             title = "You need some work your medical literacy"
+             title = "You need some work on your medical literacy"
          } else if(percentRight >= 60) {
              title = "Good Job!"
          }

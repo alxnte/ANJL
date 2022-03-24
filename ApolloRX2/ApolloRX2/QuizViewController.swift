@@ -61,7 +61,7 @@ class QuizViewController: UIViewController {
                correctAnswer: 2),
            Question(
                question: "Which of the following conditions during pregnancy can adversely affect the mother and baby?",
-               answers: ["Infection", "Preeclampsia", "Obesity and hypertension", "Obesity and hypertension", ""],
+               answers: ["Infection", "Preeclampsia", "Obesity and hypertension", "All of the Above", ""],
                correctAnswer: 3),
            Question(
                question: "What is the most commonly transplanted organ?",
@@ -147,7 +147,6 @@ class QuizViewController: UIViewController {
                vc.total = questions.count
            }
        }
-    
     
     
     

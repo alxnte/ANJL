@@ -11,7 +11,6 @@
       "size" : "20x20"
     },
     {
-      "filename" : "ApolloRx transparent.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "29x29"
@@ -32,11 +31,13 @@
       "size" : "40x40"
     },
     {
+      "filename" : "ApolloRx transparent (1).png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "60x60"
     },
     {
+      "filename" : "ApolloRx transparent (1)-1.png",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "60x60"

@@ -28,17 +28,19 @@ class LoginViewController: UIViewController {
        }*/
     
     @IBAction func onSignIn(_ sender: Any) {
+        let user = PFUser()
         let username = usernameField.text!
         let password = passwordField.text!
         
         PFUser.logInWithUsername(inBackground: username, password: password) { (user, error) in
-            if user != nil {
+            if user != nil{
                 self.performSegue(withIdentifier: "loginSegue", sender: nil)
             }else{
                 print("Error \(error?.localizedDescription)")
             }
             
         }
+
         
        /* PFUser.logInWithUsername(inBackground: username, password: password, block: {(user, error) -> Void in
                     if let error = error as NSError? {
@@ -51,25 +53,31 @@ class LoginViewController: UIViewController {
     })*/
 }
         
-      
     
     
     @IBAction func onSignUp(_ sender: Any) {
-        /*let user = PFUser()
+        let user = PFUser()
         user.username = usernameField.text
         user.password = passwordField.text
         
         user.signUpInBackground { (success, error) in
-            if success{
-                self.performSegue(withIdentifier: "loginSegue", sender: nil)
-            }else{
-                print("Error \(error?.localizedDescription)")
-            }
-        }*/
+         if (user.username != nil && user.password != nil){
+             self.performSegue(withIdentifier: "signUpSegue", sender: nil)
+         }else{
+             print("Error \(error?.localizedDescription)")
+         }
         
-        self.performSegue(withIdentifier: "signUpSegue", sender: nil)
+        
     }
-    
+        /*if (user.username != nil && user.password != nil){
+            self.performSegue(withIdentifier: "signUpSegue", sender: nil)
+        }else{
+            print("Error \(error?.localizedDescription)")
+        }*/
+       
+
+        
+        
     /*
     // MARK: - Navigation
 
@@ -79,5 +87,5 @@ class LoginViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    }
 }

@@ -14,6 +14,7 @@
 		8F9BA11027EBA1C900061E54 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9BA10F27EBA1C900061E54 /* HomeViewController.swift */; };
 		8F9BA11227EBA22400061E54 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9BA11127EBA22400061E54 /* SignUpViewController.swift */; };
 		8F9BA11427EBB5EA00061E54 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9BA11327EBB5EA00061E54 /* QuizViewController.swift */; };
+		8F9BA11627EBF27A00061E54 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9BA11527EBF27900061E54 /* ResultsViewController.swift */; };
 		8FB7808927EAC6FD002C1827 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB7808827EAC6FD002C1827 /* AppDelegate.swift */; };
 		8FB7808B27EAC6FD002C1827 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB7808A27EAC6FD002C1827 /* SceneDelegate.swift */; };
 		8FB7809027EAC6FD002C1827 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FB7808E27EAC6FD002C1827 /* Main.storyboard */; };
@@ -48,6 +49,7 @@
 		8F9BA10F27EBA1C900061E54 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		8F9BA11127EBA22400061E54 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		8F9BA11327EBB5EA00061E54 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
+		8F9BA11527EBF27900061E54 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 		8FB7808527EAC6FD002C1827 /* ApolloRX2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApolloRX2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FB7808827EAC6FD002C1827 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8FB7808A27EAC6FD002C1827 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 				8FB7808827EAC6FD002C1827 /* AppDelegate.swift */,
 				8FB7808A27EAC6FD002C1827 /* SceneDelegate.swift */,
 				8FB7808E27EAC6FD002C1827 /* Main.storyboard */,
+				8F9BA11527EBF27900061E54 /* ResultsViewController.swift */,
 				8F9BA11327EBB5EA00061E54 /* QuizViewController.swift */,
 				8F9BA11127EBA22400061E54 /* SignUpViewController.swift */,
 				8F9BA10F27EBA1C900061E54 /* HomeViewController.swift */,
@@ -418,6 +421,7 @@
 				8F1766A427EB9EBE006F14A1 /* LoginViewController.swift in Sources */,
 				8FB7808927EAC6FD002C1827 /* AppDelegate.swift in Sources */,
 				8FB7808B27EAC6FD002C1827 /* SceneDelegate.swift in Sources */,
+				8F9BA11627EBF27A00061E54 /* ResultsViewController.swift in Sources */,
 				8F9BA11427EBB5EA00061E54 /* QuizViewController.swift in Sources */,
 				8F9BA11027EBA1C900061E54 /* HomeViewController.swift in Sources */,
 				8F9BA11227EBA22400061E54 /* SignUpViewController.swift in Sources */,

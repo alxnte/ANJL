@@ -9,6 +9,10 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
+    @IBOutlet weak var checkBox1: UIImageView!
+    @IBOutlet weak var checkBox2: UIImageView!
+    @IBOutlet weak var checkBox3: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

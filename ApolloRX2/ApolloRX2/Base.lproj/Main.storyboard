@@ -444,7 +444,7 @@
         <!--Search-->
         <scene sceneID="di7-hm-a6w">
             <objects>
-                <viewController id="cav-O4-lcI" sceneMemberID="viewController">
+                <viewController id="cav-O4-lcI" customClass="SearchViewController" customModule="ApolloRX2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="j5v-0i-d3B">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

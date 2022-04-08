@@ -23,6 +23,7 @@
 		8FB780A027EAC6FF002C1827 /* ApolloRX2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB7809F27EAC6FF002C1827 /* ApolloRX2Tests.swift */; };
 		8FB780AA27EAC6FF002C1827 /* ApolloRX2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB780A927EAC6FF002C1827 /* ApolloRX2UITests.swift */; };
 		8FB780AC27EAC6FF002C1827 /* ApolloRX2UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB780AB27EAC6FF002C1827 /* ApolloRX2UITestsLaunchTests.swift */; };
+		BF775D2C28009F0C00169F1A /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF775D2B28009F0C00169F1A /* SearchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		8FB780A527EAC6FF002C1827 /* ApolloRX2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ApolloRX2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FB780A927EAC6FF002C1827 /* ApolloRX2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloRX2UITests.swift; sourceTree = "<group>"; };
 		8FB780AB27EAC6FF002C1827 /* ApolloRX2UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloRX2UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BF775D2B28009F0C00169F1A /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		C527150A853EB0E041E61C2D /* Pods-ApolloRX2-ApolloRX2UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApolloRX2-ApolloRX2UITests.debug.xcconfig"; path = "Target Support Files/Pods-ApolloRX2-ApolloRX2UITests/Pods-ApolloRX2-ApolloRX2UITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C9E98A0A936E678D0AFF9AAB /* Pods_ApolloRX2_ApolloRX2UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ApolloRX2_ApolloRX2UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE42B1EFB66382E12F0BA0F0 /* Pods-ApolloRX2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApolloRX2.debug.xcconfig"; path = "Target Support Files/Pods-ApolloRX2/Pods-ApolloRX2.debug.xcconfig"; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 				8FB7808827EAC6FD002C1827 /* AppDelegate.swift */,
 				8FB7808A27EAC6FD002C1827 /* SceneDelegate.swift */,
 				8FB7808E27EAC6FD002C1827 /* Main.storyboard */,
+				BF775D2B28009F0C00169F1A /* SearchViewController.swift */,
 				8F9BA11527EBF27900061E54 /* ResultsViewController.swift */,
 				8F9BA11327EBB5EA00061E54 /* QuizViewController.swift */,
 				8F9BA11127EBA22400061E54 /* SignUpViewController.swift */,
@@ -420,6 +423,7 @@
 			files = (
 				8F1766A427EB9EBE006F14A1 /* LoginViewController.swift in Sources */,
 				8FB7808927EAC6FD002C1827 /* AppDelegate.swift in Sources */,
+				BF775D2C28009F0C00169F1A /* SearchViewController.swift in Sources */,
 				8FB7808B27EAC6FD002C1827 /* SceneDelegate.swift in Sources */,
 				8F9BA11627EBF27A00061E54 /* ResultsViewController.swift in Sources */,
 				8F9BA11427EBB5EA00061E54 /* QuizViewController.swift in Sources */,

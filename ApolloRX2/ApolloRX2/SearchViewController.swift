@@ -19,7 +19,7 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
         searchTableView.dataSource = self
         searchTableView.delegate = self
         // Do any additional setup after loading the view.
-        let url = URL(string: "https://rxnav.nlm.nih.gov/REST/displaynames.json")!
+        let url = URL(string: "https://rxnav.nlm.nih.gov/REST/drugs.json?name=Lipitor")!
         let request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 10)
         let session = URLSession(configuration: .default, delegate: nil, delegateQueue: OperationQueue.main)
         let task = session.dataTask(with: request) { (data, response, error) in
@@ -29,7 +29,7 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
              } else if let data = data {
                     let dataDictionary = try! JSONSerialization.jsonObject(with: data, options: []) as! [String: Any]
                     
-                 self.medSearchResults = dataDictionary["displayTermsList"] as! [[String:Any]]
+                 self.medSearchResults = dataDictionary["drugGroup"] as! [[String:Any]]
                  
                  self.searchTableView.reloadData()
                  
@@ -52,7 +52,7 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
         let cell = UITableViewCell()
         
         let drug = medSearchResults[indexPath.row]
-        let drugName = drug["term"] as! String
+        let drugName = drug["conceptProperties"] as! String
         cell.textLabel!.text = "row:\(indexPath.row)"
         
         return cell

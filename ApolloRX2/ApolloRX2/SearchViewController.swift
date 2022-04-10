@@ -29,7 +29,7 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
              } else if let data = data {
                     let dataDictionary = try! JSONSerialization.jsonObject(with: data, options: []) as! [String: Any]
                     
-                 self.medSearchResults = dataDictionary["drugGroup"] as! [[String:Any]]
+                 self.medSearchResults = dataDictionary["conceptGroup"] as! [[String:Any]]
                  
                  self.searchTableView.reloadData()
                  

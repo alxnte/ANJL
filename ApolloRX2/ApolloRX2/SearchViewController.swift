@@ -11,6 +11,8 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
 
     @IBOutlet weak var searchTableView: UITableView!
     
+    var medSearchResultsArrayDict = [[String:Any]]()
+    
     var medSearchResults = [[String:Any]]()
 
     override func viewDidLoad() {
@@ -29,11 +31,14 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
              } else if let data = data {
                     let dataDictionary = try! JSONSerialization.jsonObject(with: data, options: []) as! [String: Any]
                     
-                 self.medSearchResults = dataDictionary["conceptGroup"] as! [[String:Any]]
+                 self.medSearchResultsArrayDict = dataDictionary["conceptGroup"] as! [[String:Any]]
+                 //var arrayConceptPropertiesArrayDict = self.medSearchResultsArrayDict[1]
                  
-                 self.searchTableView.reloadData()
+                 //self.medSearchResults = arrayConceptPropertiesArrayDict
                  
-                    print(dataDictionary)
+                 //self.searchTableView.reloadData()
+                 
+                 print(self.medSearchResultsArrayDict)
 
                     // TODO: Get the array of movies
                     // TODO: Store the movies in a property to use elsewhere
@@ -45,7 +50,7 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return medSearchResults.count
+        return 5
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

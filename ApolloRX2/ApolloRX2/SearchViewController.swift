@@ -7,16 +7,19 @@
 
 import UIKit
 
-class SearchViewController: UIViewController, UITableViewDataSource, UITableViewDelegate{
+class SearchViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate{
 
     @IBOutlet weak var searchTableView: UITableView!
     @IBOutlet weak var drugSearchBar: UISearchBar!
     
     var medSearchResults = [[String:Any]]()
+    var filteredData = [Any]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        filteredData = medSearchResults
+        drugSearchBar.delegate = self
         searchTableView.dataSource = self
         searchTableView.delegate = self
         // Do any additional setup after loading the view.
@@ -54,7 +57,7 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return medSearchResults.count
+        return filteredData.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

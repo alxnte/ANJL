@@ -20,8 +20,8 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
         searchTableView.dataSource = self
         searchTableView.delegate = self
         // Do any additional setup after loading the view.
-        let searchName = drugSearchBar.text
-        let url = URL(string: "https://rxnav.nlm.nih.gov/REST/drugs.json?name=\(searchName)")!
+        //let searchName = drugSearchBar.text
+        let url = URL(string: "https://rxnav.nlm.nih.gov/REST/drugs.json?name=Lipitor")!
         let request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 10)
         let session = URLSession(configuration: .default, delegate: nil, delegateQueue: OperationQueue.main)
         let task = session.dataTask(with: request) { (data, response, error) in
@@ -41,7 +41,7 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
                  
                  self.searchTableView.reloadData()
                  
-                 print(conceptGroup)
+                 print(conceptProperties)
 
                     // TODO: Get the array of movies
                     // TODO: Store the movies in a property to use elsewhere

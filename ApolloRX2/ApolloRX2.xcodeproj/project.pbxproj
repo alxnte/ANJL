@@ -10,6 +10,9 @@
 		20543CD0ADBECFC222249BDB /* Pods_ApolloRX2_ApolloRX2UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9E98A0A936E678D0AFF9AAB /* Pods_ApolloRX2_ApolloRX2UITests.framework */; };
 		3D93358C4DE4980516FCE5B4 /* Pods_ApolloRX2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F688279E41A997ECE7849410 /* Pods_ApolloRX2.framework */; };
 		4174D7AAF864BB9A53440B2B /* Pods_ApolloRX2Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 325FAC6AD8F4E26E6368CEA3 /* Pods_ApolloRX2Tests.framework */; };
+		8F018D062804EAFA001E5F7E /* CalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F018D052804EAFA001E5F7E /* CalendarCell.swift */; };
+		8F018D082804F34C001E5F7E /* MedicineEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F018D072804F34C001E5F7E /* MedicineEditViewController.swift */; };
+		8F018D0A2804F497001E5F7E /* MedicineCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F018D092804F497001E5F7E /* MedicineCell.swift */; };
 		8F1766A427EB9EBE006F14A1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1766A327EB9EBE006F14A1 /* LoginViewController.swift */; };
 		8F9BA11027EBA1C900061E54 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9BA10F27EBA1C900061E54 /* HomeViewController.swift */; };
 		8F9BA11227EBA22400061E54 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9BA11127EBA22400061E54 /* SignUpViewController.swift */; };
@@ -23,8 +26,8 @@
 		8FB780A027EAC6FF002C1827 /* ApolloRX2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB7809F27EAC6FF002C1827 /* ApolloRX2Tests.swift */; };
 		8FB780AA27EAC6FF002C1827 /* ApolloRX2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB780A927EAC6FF002C1827 /* ApolloRX2UITests.swift */; };
 		8FB780AC27EAC6FF002C1827 /* ApolloRX2UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB780AB27EAC6FF002C1827 /* ApolloRX2UITestsLaunchTests.swift */; };
+		8FB7C0CC2804F7260010C100 /* Medicine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB7C0CB2804F7260010C100 /* Medicine.swift */; };
 		8FC62B9528039AAF0041EB91 /* CalendarHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC62B9428039AAF0041EB91 /* CalendarHelper.swift */; };
-		8FCB7FDB2803952600F14C64 /* CalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCB7FDA2803952600F14C64 /* CalendarCell.swift */; };
 		DBF0CA4E28037306008E70EA /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF0CA4D28037306008E70EA /* SearchViewController.swift */; };
 		DBF0CA5028037329008E70EA /* MedInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF0CA4F28037329008E70EA /* MedInfoViewController.swift */; };
 /* End PBXBuildFile section */
@@ -49,6 +52,9 @@
 /* Begin PBXFileReference section */
 		325FAC6AD8F4E26E6368CEA3 /* Pods_ApolloRX2Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ApolloRX2Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DAF98A5A2FC8B3E72FF84CA /* Pods-ApolloRX2-ApolloRX2UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApolloRX2-ApolloRX2UITests.release.xcconfig"; path = "Target Support Files/Pods-ApolloRX2-ApolloRX2UITests/Pods-ApolloRX2-ApolloRX2UITests.release.xcconfig"; sourceTree = "<group>"; };
+		8F018D052804EAFA001E5F7E /* CalendarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCell.swift; sourceTree = "<group>"; };
+		8F018D072804F34C001E5F7E /* MedicineEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineEditViewController.swift; sourceTree = "<group>"; };
+		8F018D092804F497001E5F7E /* MedicineCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineCell.swift; sourceTree = "<group>"; };
 		8F1766A327EB9EBE006F14A1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8F9BA10F27EBA1C900061E54 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		8F9BA11127EBA22400061E54 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -66,8 +72,8 @@
 		8FB780A527EAC6FF002C1827 /* ApolloRX2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ApolloRX2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FB780A927EAC6FF002C1827 /* ApolloRX2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloRX2UITests.swift; sourceTree = "<group>"; };
 		8FB780AB27EAC6FF002C1827 /* ApolloRX2UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloRX2UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8FB7C0CB2804F7260010C100 /* Medicine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medicine.swift; sourceTree = "<group>"; };
 		8FC62B9428039AAF0041EB91 /* CalendarHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarHelper.swift; sourceTree = "<group>"; };
-		8FCB7FDA2803952600F14C64 /* CalendarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCell.swift; sourceTree = "<group>"; };
 		C527150A853EB0E041E61C2D /* Pods-ApolloRX2-ApolloRX2UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApolloRX2-ApolloRX2UITests.debug.xcconfig"; path = "Target Support Files/Pods-ApolloRX2-ApolloRX2UITests/Pods-ApolloRX2-ApolloRX2UITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C9E98A0A936E678D0AFF9AAB /* Pods_ApolloRX2_ApolloRX2UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ApolloRX2_ApolloRX2UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE42B1EFB66382E12F0BA0F0 /* Pods-ApolloRX2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApolloRX2.debug.xcconfig"; path = "Target Support Files/Pods-ApolloRX2/Pods-ApolloRX2.debug.xcconfig"; sourceTree = "<group>"; };
@@ -135,8 +141,11 @@
 				8FB7808827EAC6FD002C1827 /* AppDelegate.swift */,
 				8FB7808A27EAC6FD002C1827 /* SceneDelegate.swift */,
 				8FB7808E27EAC6FD002C1827 /* Main.storyboard */,
+				8FB7C0CB2804F7260010C100 /* Medicine.swift */,
+				8F018D092804F497001E5F7E /* MedicineCell.swift */,
+				8F018D072804F34C001E5F7E /* MedicineEditViewController.swift */,
+				8F018D052804EAFA001E5F7E /* CalendarCell.swift */,
 				8FC62B9428039AAF0041EB91 /* CalendarHelper.swift */,
-				8FCB7FDA2803952600F14C64 /* CalendarCell.swift */,
 				8F9BA11527EBF27900061E54 /* ResultsViewController.swift */,
 				8F9BA11327EBB5EA00061E54 /* QuizViewController.swift */,
 				8F9BA11127EBA22400061E54 /* SignUpViewController.swift */,
@@ -430,15 +439,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F018D082804F34C001E5F7E /* MedicineEditViewController.swift in Sources */,
 				8F1766A427EB9EBE006F14A1 /* LoginViewController.swift in Sources */,
 				DBF0CA5028037329008E70EA /* MedInfoViewController.swift in Sources */,
 				8FB7808927EAC6FD002C1827 /* AppDelegate.swift in Sources */,
+				8F018D0A2804F497001E5F7E /* MedicineCell.swift in Sources */,
 				DBF0CA4E28037306008E70EA /* SearchViewController.swift in Sources */,
 				8FB7808B27EAC6FD002C1827 /* SceneDelegate.swift in Sources */,
+				8FB7C0CC2804F7260010C100 /* Medicine.swift in Sources */,
 				8F9BA11627EBF27A00061E54 /* ResultsViewController.swift in Sources */,
 				8F9BA11427EBB5EA00061E54 /* QuizViewController.swift in Sources */,
+				8F018D062804EAFA001E5F7E /* CalendarCell.swift in Sources */,
 				8FC62B9528039AAF0041EB91 /* CalendarHelper.swift in Sources */,
-				8FCB7FDB2803952600F14C64 /* CalendarCell.swift in Sources */,
 				8F9BA11027EBA1C900061E54 /* HomeViewController.swift in Sources */,
 				8F9BA11227EBA22400061E54 /* SignUpViewController.swift in Sources */,
 			);

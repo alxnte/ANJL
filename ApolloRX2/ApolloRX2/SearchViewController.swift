@@ -10,6 +10,7 @@ import UIKit
 class SearchViewController: UIViewController, UITableViewDataSource, UITableViewDelegate{
 
     @IBOutlet weak var searchTableView: UITableView!
+    @IBOutlet weak var drugSearchBar: UISearchBar!
     
     var medSearchResults = [[String:Any]]()
 
@@ -19,7 +20,8 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
         searchTableView.dataSource = self
         searchTableView.delegate = self
         // Do any additional setup after loading the view.
-        let url = URL(string: "https://rxnav.nlm.nih.gov/REST/drugs.json?name=Lipitor")!
+        let searchName = drugSearchBar.text
+        let url = URL(string: "https://rxnav.nlm.nih.gov/REST/drugs.json?name=\(searchName)")!
         let request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 10)
         let session = URLSession(configuration: .default, delegate: nil, delegateQueue: OperationQueue.main)
         let task = session.dataTask(with: request) { (data, response, error) in
@@ -59,7 +61,7 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
         let cell = UITableViewCell()
         
         let drug = medSearchResults[indexPath.row]
-        let drugName = drug["name"] as! String
+        let drugName = drug["synonym"] as! String
         
         cell.textLabel!.text = drugName
         

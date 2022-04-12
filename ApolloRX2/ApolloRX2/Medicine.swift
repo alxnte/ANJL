@@ -17,7 +17,7 @@ class Medicine{
     func medicineForDate(date: Date) -> [Medicine]{
         var daysMedicine = [Medicine]()
         for medicine in medList{
-            if(medicine.date == date){
+            if(Calendar.current.isDate(medicine.date, inSameDayAs: date)){
                 daysMedicine.append(medicine)
             }
             

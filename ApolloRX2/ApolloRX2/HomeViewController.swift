@@ -54,6 +54,7 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
         
         monthLabel.text = CalendarHelper().monthString(date: selectedDate) + " " + CalendarHelper().yearString(date: selectedDate)
         collectionView.reloadData()
+        tableView.reloadData()
     }
     
     
@@ -111,7 +112,9 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellID") as! MedicineCell
         let medicine = Medicine().medicineForDate(date: selectedDate)[indexPath.row]
         
-        cell.medicineLabel.text = medicine.name + " " + CalendarHelper().timeString(date: medicine.date)
+        
+        
+        cell.medicineLabel.text = medicine.name + "     " + CalendarHelper().timeString(date: medicine.date)
         
         return cell
     }

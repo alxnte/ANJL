@@ -29,8 +29,8 @@ class MedicinceEditViewController: UIViewController{
         newMedicine.date = datePicker.date
         
         medList.append(newMedicine)
-        navigationController?.popViewController(animated: true)
-        //performSegue(withIdentifier: "saveSegue", sender: (Any).self)
+        //navigationController?.popViewController(animated: true)
+        performSegue(withIdentifier: "saveSegue", sender: (Any).self)
     }
     
 }

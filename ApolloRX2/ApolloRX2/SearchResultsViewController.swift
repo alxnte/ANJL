@@ -13,7 +13,7 @@ class SearchResultsViewController: UIViewController, UITableViewDataSource, UITa
     //let field = SearchViewController.searchTextField.text
     var medSearchResults = [[String:Any]]();
     var delegate: SearchViewController? = nil
-    var searchString = "https://rxnav.nlm.nih.gov/REST/drugs.json?name="
+    var searchString = "https://rxnav.nlm.nih.gov/REST/drugs.json?name=\(searchField)"
     
     override func viewDidLoad() {
         super.viewDidLoad()

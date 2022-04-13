@@ -326,7 +326,7 @@
         <!--Account-->
         <scene sceneID="OSi-H0-oDc">
             <objects>
-                <viewController id="yt2-PJ-VnQ" sceneMemberID="viewController">
+                <viewController id="yt2-PJ-VnQ" customClass="AccountViewController" customModule="ApolloRX2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XaU-QE-eO4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -378,7 +378,7 @@
         <!--Account Settings-->
         <scene sceneID="IW4-TM-2wa">
             <objects>
-                <viewController id="fTh-6n-s8I" userLabel="Account Settings" sceneMemberID="viewController">
+                <viewController id="fTh-6n-s8I" userLabel="Account Settings" customClass="SettingsViewController" customModule="ApolloRX2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="psS-FM-JGr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

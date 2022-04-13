@@ -29,7 +29,7 @@ class SignUpViewController: UIViewController {
         user.username = usernameField.text!
         user.password = createPasswordField.text!
         
-        user.signUpInBackground { (success, error) in
+        user.signUpInBackground{ (success, error) in
             if success{
                 self.performSegue(withIdentifier: "quizSegue", sender: nil)
             }else{

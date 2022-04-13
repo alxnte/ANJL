@@ -60,6 +60,11 @@ class SearchViewController: UIViewController{
          
          */
     }
+    func search(){
+        let searchWord = searchTextField.text!
+        print(searchWord)
+    }
+    
     
     /*
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool{
@@ -99,7 +104,10 @@ class SearchViewController: UIViewController{
     }
     */
     
+    
     @IBAction func onSearchButton(_ sender: Any) {
+        search() 
+       
         performSegue(withIdentifier: "searchSegue", sender: nil)
     }
     /*

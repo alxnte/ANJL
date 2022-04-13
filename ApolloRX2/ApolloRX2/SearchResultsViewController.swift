@@ -20,9 +20,9 @@ class SearchResultsViewController: UIViewController, UITableViewDataSource, UITa
         searchResultsTableView.dataSource = self
         searchResultsTableView.delegate = self
         
-        let searchField = delegate!.searchTextField.text as! String
+        //let searchField = delegate!.searchTextField.text!
         
-        let url = URL(string: "https://rxnav.nlm.nih.gov/REST/drugs.json?name=\(searchField)")
+        let url = URL(string: "https://rxnav.nlm.nih.gov/REST/drugs.json?name=Lipitor")
         let request = URLRequest(url: url!, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 10)
         let session = URLSession(configuration: .default, delegate: nil, delegateQueue: OperationQueue.main)
         let task = session.dataTask(with: request) { (data, response, error) in
@@ -44,6 +44,7 @@ class SearchResultsViewController: UIViewController, UITableViewDataSource, UITa
                      }
                  }
                  self.searchResultsTableView.reloadData()
+                 //print(searchField)
              }
 
                     // TODO: Get the array of movies
@@ -63,6 +64,10 @@ class SearchResultsViewController: UIViewController, UITableViewDataSource, UITa
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "drugNameCell")
+        
+        let searchField = delegate?.searchTextField.text!
+        
+        let url = URL(string: "https://rxnav.nlm.nih.gov/REST/drugs.json?name=\(searchField)")
         
         let drug = medSearchResults[indexPath.row]
         let drugName = drug["synonym"] as! String

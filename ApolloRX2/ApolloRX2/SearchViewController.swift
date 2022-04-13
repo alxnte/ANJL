@@ -15,6 +15,7 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
     
     //var medSearchData = [[String:Any]]()
     var medSearchResults = [[String:Any]]();
+    var newSearchString:String = ""
     var searchString = "https://rxnav.nlm.nih.gov/REST/drugs.json?name="
 
 
@@ -29,7 +30,7 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
         // Do any additional setup after loading the view.
         //let searchName = drugSearchBar.text
         //let userInput = searchTextField.text
-        let url = URL(string: searchString)
+        let url = URL(string: newSearchString)
         let request = URLRequest(url: url!, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 10)
         let session = URLSession(configuration: .default, delegate: nil, delegateQueue: OperationQueue.main)
         let task = session.dataTask(with: request) { (data, response, error) in
@@ -51,7 +52,6 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
                      }
                  }
                  self.searchTableView.reloadData()
-                 print(self.medSearchResults)
              }
 
                     // TODO: Get the array of movies
@@ -92,7 +92,8 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
         let cell = tableView.dequeueReusableCell(withIdentifier: "medNameCell")
         
         let searchField = searchTextField.text!
-        searchString = searchString + searchField
+        newSearchString = searchString + searchField
+        //searchString = searchString + searchField
         
         let drug = medSearchResults[indexPath.row]
         let drugName = drug["synonym"] as! String

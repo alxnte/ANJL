@@ -13,16 +13,15 @@ class SearchResultsViewController: UIViewController, UITableViewDataSource, UITa
     //let field = SearchViewController.searchTextField.text
     var medSearchResults = [[String:Any]]();
     var delegate: SearchViewController? = nil
+    var searchString = "https://rxnav.nlm.nih.gov/REST/drugs.json?name="
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         searchResultsTableView.dataSource = self
         searchResultsTableView.delegate = self
-        
-        //let searchField = delegate!.searchTextField.text!
-        
-        let url = URL(string: "https://rxnav.nlm.nih.gov/REST/drugs.json?name=Lipitor")
+       
+        let url = URL(string: searchString)
         let request = URLRequest(url: url!, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 10)
         let session = URLSession(configuration: .default, delegate: nil, delegateQueue: OperationQueue.main)
         let task = session.dataTask(with: request) { (data, response, error) in
@@ -66,8 +65,7 @@ class SearchResultsViewController: UIViewController, UITableViewDataSource, UITa
         let cell = tableView.dequeueReusableCell(withIdentifier: "drugNameCell")
         
         let searchField = delegate?.searchTextField.text!
-        
-        let url = URL(string: "https://rxnav.nlm.nih.gov/REST/drugs.json?name=\(searchField)")
+        searchString = searchString + searchField!
         
         let drug = medSearchResults[indexPath.row]
         let drugName = drug["synonym"] as! String

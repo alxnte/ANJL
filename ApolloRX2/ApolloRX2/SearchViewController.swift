@@ -7,19 +7,21 @@
 
 import UIKit
 
-class SearchViewController: UIViewController{
+class SearchViewController: UIViewController, UITableViewDataSource, UITableViewDelegate{
 
     @IBOutlet weak var searchTextField: UITextField!
     //var search:String = ""
+    @IBOutlet weak var searchTableView: UITableView!
     
-    //@IBOutlet weak var searchTableView: UITableView!
     //var medSearchData = [[String:Any]]()
     var medSearchResults = [[String:Any]]();
+    var searchString = "https://rxnav.nlm.nih.gov/REST/drugs.json?name="
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        /*
+        
         searchTableView.dataSource = self
         searchTableView.delegate = self
         
@@ -27,7 +29,7 @@ class SearchViewController: UIViewController{
         // Do any additional setup after loading the view.
         //let searchName = drugSearchBar.text
         //let userInput = searchTextField.text
-        let url = URL(string: "https://rxnav.nlm.nih.gov/REST/drugs.json?name=Lipitor")
+        let url = URL(string: searchString)
         let request = URLRequest(url: url!, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 10)
         let session = URLSession(configuration: .default, delegate: nil, delegateQueue: OperationQueue.main)
         let task = session.dataTask(with: request) { (data, response, error) in
@@ -57,12 +59,6 @@ class SearchViewController: UIViewController{
                     // TODO: Reload your table view data
         }
         task.resume()
-         
-         */
-    }
-    func search(){
-        let searchWord = searchTextField.text!
-        print(searchWord)
     }
     
     
@@ -86,7 +82,7 @@ class SearchViewController: UIViewController{
             medSearchResults.removeAll(removeAll(keepingCapacity: true))
         }
     }
-    
+ */
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return medSearchResults.count
@@ -95,6 +91,9 @@ class SearchViewController: UIViewController{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "medNameCell")
         
+        let searchField = searchTextField.text!
+        searchString = searchString + searchField
+        
         let drug = medSearchResults[indexPath.row]
         let drugName = drug["synonym"] as! String
         
@@ -102,14 +101,9 @@ class SearchViewController: UIViewController{
         
         return cell!
     }
-    */
     
     
-    @IBAction func onSearchButton(_ sender: Any) {
-        search() 
-       
-        performSegue(withIdentifier: "searchSegue", sender: nil)
-    }
+    
     /*
     // MARK: - Navigation
 

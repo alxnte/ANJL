@@ -1,33 +1,28 @@
 //
-//  SearchViewController.swift
+//  SearchResultsViewController.swift
 //  ApolloRX2
 //
-//  Created by Jasmine Makombe on 4/10/22.
+//  Created by Jasmine Makombe on 4/13/22.
 //
 
 import UIKit
 
-class SearchViewController: UIViewController{
-
-    @IBOutlet weak var searchTextField: UITextField!
-    //var search:String = ""
+class SearchResultsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    //@IBOutlet weak var searchTableView: UITableView!
-    //var medSearchData = [[String:Any]]()
+    @IBOutlet weak var searchResultsTableView: UITableView!
+    //let field = SearchViewController.searchTextField.text
     var medSearchResults = [[String:Any]]();
-
+    var delegate: SearchViewController? = nil
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        /*
-        searchTableView.dataSource = self
-        searchTableView.delegate = self
+        searchResultsTableView.dataSource = self
+        searchResultsTableView.delegate = self
         
-        //medSearchResults = medSearchData
-        // Do any additional setup after loading the view.
-        //let searchName = drugSearchBar.text
-        //let userInput = searchTextField.text
-        let url = URL(string: "https://rxnav.nlm.nih.gov/REST/drugs.json?name=Lipitor")
+        let searchField = delegate!.searchTextField.text as! String
+        
+        let url = URL(string: "https://rxnav.nlm.nih.gov/REST/drugs.json?name=\(searchField)")
         let request = URLRequest(url: url!, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 10)
         let session = URLSession(configuration: .default, delegate: nil, delegateQueue: OperationQueue.main)
         let task = session.dataTask(with: request) { (data, response, error) in
@@ -48,8 +43,7 @@ class SearchViewController: UIViewController{
                          break
                      }
                  }
-                 self.searchTableView.reloadData()
-                 print(self.medSearchResults)
+                 self.searchResultsTableView.reloadData()
              }
 
                     // TODO: Get the array of movies
@@ -57,38 +51,18 @@ class SearchViewController: UIViewController{
                     // TODO: Reload your table view data
         }
         task.resume()
-         
-         */
     }
     
-    /*
-    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool{
-        
-        if string.isEmpty{
-            search = String(search.dropLast())
-        }
-        else{
-            search = textField.text!+string
-        }
-        
-        print(search)
-        
-        let predicate = NSPredicate(format: "SELF.name CONTAINS[cd] %@", search)
-        let arr = (medSearchData as NSArray).filtered(using: predicate)
-        
-        if arr.count > 0{
-            
-            medSearchResults.removeAll(removeAll(keepingCapacity: true))
-        }
+    @IBAction func backButton(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
     }
-    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return medSearchResults.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "medNameCell")
+        let cell = tableView.dequeueReusableCell(withIdentifier: "drugNameCell")
         
         let drug = medSearchResults[indexPath.row]
         let drugName = drug["synonym"] as! String
@@ -97,11 +71,7 @@ class SearchViewController: UIViewController{
         
         return cell!
     }
-    */
-    
-    @IBAction func onSearchButton(_ sender: Any) {
-        performSegue(withIdentifier: "searchSegue", sender: nil)
-    }
+
     /*
     // MARK: - Navigation
 

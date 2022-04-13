@@ -28,6 +28,7 @@
 		8FB780AC27EAC6FF002C1827 /* ApolloRX2UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB780AB27EAC6FF002C1827 /* ApolloRX2UITestsLaunchTests.swift */; };
 		8FB7C0CC2804F7260010C100 /* Medicine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB7C0CB2804F7260010C100 /* Medicine.swift */; };
 		8FC62B9528039AAF0041EB91 /* CalendarHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC62B9428039AAF0041EB91 /* CalendarHelper.swift */; };
+		DBBB819C28072D6D00C7C85B /* SearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBB819B28072D6D00C7C85B /* SearchResultsViewController.swift */; };
 		DBF0CA4E28037306008E70EA /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF0CA4D28037306008E70EA /* SearchViewController.swift */; };
 		DBF0CA5028037329008E70EA /* MedInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF0CA4F28037329008E70EA /* MedInfoViewController.swift */; };
 /* End PBXBuildFile section */
@@ -79,6 +80,7 @@
 		CE42B1EFB66382E12F0BA0F0 /* Pods-ApolloRX2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApolloRX2.debug.xcconfig"; path = "Target Support Files/Pods-ApolloRX2/Pods-ApolloRX2.debug.xcconfig"; sourceTree = "<group>"; };
 		D45DB39580F68C18D696B464 /* Pods-ApolloRX2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApolloRX2.release.xcconfig"; path = "Target Support Files/Pods-ApolloRX2/Pods-ApolloRX2.release.xcconfig"; sourceTree = "<group>"; };
 		D7F52878AAB5EDB57AED0D19 /* Pods-ApolloRX2Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApolloRX2Tests.release.xcconfig"; path = "Target Support Files/Pods-ApolloRX2Tests/Pods-ApolloRX2Tests.release.xcconfig"; sourceTree = "<group>"; };
+		DBBB819B28072D6D00C7C85B /* SearchResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsViewController.swift; sourceTree = "<group>"; };
 		DBF0CA4D28037306008E70EA /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		DBF0CA4F28037329008E70EA /* MedInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedInfoViewController.swift; sourceTree = "<group>"; };
 		F24C69EDC7982FC2088A55F0 /* Pods-ApolloRX2Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApolloRX2Tests.debug.xcconfig"; path = "Target Support Files/Pods-ApolloRX2Tests/Pods-ApolloRX2Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 				8FB7809627EAC6FF002C1827 /* Info.plist */,
 				DBF0CA4D28037306008E70EA /* SearchViewController.swift */,
 				DBF0CA4F28037329008E70EA /* MedInfoViewController.swift */,
+				DBBB819B28072D6D00C7C85B /* SearchResultsViewController.swift */,
 			);
 			path = ApolloRX2;
 			sourceTree = "<group>";
@@ -443,6 +446,7 @@
 				8F1766A427EB9EBE006F14A1 /* LoginViewController.swift in Sources */,
 				DBF0CA5028037329008E70EA /* MedInfoViewController.swift in Sources */,
 				8FB7808927EAC6FD002C1827 /* AppDelegate.swift in Sources */,
+				DBBB819C28072D6D00C7C85B /* SearchResultsViewController.swift in Sources */,
 				8F018D0A2804F497001E5F7E /* MedicineCell.swift in Sources */,
 				DBF0CA4E28037306008E70EA /* SearchViewController.swift in Sources */,
 				8FB7808B27EAC6FD002C1827 /* SceneDelegate.swift in Sources */,

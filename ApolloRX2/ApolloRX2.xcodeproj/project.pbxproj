@@ -13,6 +13,8 @@
 		8F018D062804EAFA001E5F7E /* CalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F018D052804EAFA001E5F7E /* CalendarCell.swift */; };
 		8F018D082804F34C001E5F7E /* MedicineEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F018D072804F34C001E5F7E /* MedicineEditViewController.swift */; };
 		8F1766A427EB9EBE006F14A1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1766A327EB9EBE006F14A1 /* LoginViewController.swift */; };
+		8F6D292A280934D700CF53C9 /* MedNameTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6D2929280934D700CF53C9 /* MedNameTableViewCell.swift */; };
+		8F8FF88A28095C4500160696 /* InformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8FF88928095C4400160696 /* InformationViewController.swift */; };
 		8F9BA11027EBA1C900061E54 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9BA10F27EBA1C900061E54 /* HomeViewController.swift */; };
 		8F9BA11227EBA22400061E54 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9BA11127EBA22400061E54 /* SignUpViewController.swift */; };
 		8F9BA11427EBB5EA00061E54 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9BA11327EBB5EA00061E54 /* QuizViewController.swift */; };
@@ -30,7 +32,6 @@
 		8FEDB89528087DE000015235 /* AccountSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEDB89428087DE000015235 /* AccountSettingsViewController.swift */; };
 		8FEDB8972808A89300015235 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEDB8962808A89300015235 /* AccountViewController.swift */; };
 		8FEDB8992808B9E700015235 /* MedicineCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEDB8982808B9E700015235 /* MedicineCell.swift */; };
-		DBBB819C28072D6D00C7C85B /* SearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBB819B28072D6D00C7C85B /* SearchResultsViewController.swift */; };
 		DBF0CA4E28037306008E70EA /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF0CA4D28037306008E70EA /* SearchViewController.swift */; };
 		DBF0CA5028037329008E70EA /* MedInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF0CA4F28037329008E70EA /* MedInfoViewController.swift */; };
 /* End PBXBuildFile section */
@@ -58,6 +59,8 @@
 		8F018D052804EAFA001E5F7E /* CalendarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCell.swift; sourceTree = "<group>"; };
 		8F018D072804F34C001E5F7E /* MedicineEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineEditViewController.swift; sourceTree = "<group>"; };
 		8F1766A327EB9EBE006F14A1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		8F6D2929280934D700CF53C9 /* MedNameTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedNameTableViewCell.swift; sourceTree = "<group>"; };
+		8F8FF88928095C4400160696 /* InformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationViewController.swift; sourceTree = "<group>"; };
 		8F9BA10F27EBA1C900061E54 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		8F9BA11127EBA22400061E54 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		8F9BA11327EBB5EA00061E54 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
@@ -84,7 +87,6 @@
 		CE42B1EFB66382E12F0BA0F0 /* Pods-ApolloRX2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApolloRX2.debug.xcconfig"; path = "Target Support Files/Pods-ApolloRX2/Pods-ApolloRX2.debug.xcconfig"; sourceTree = "<group>"; };
 		D45DB39580F68C18D696B464 /* Pods-ApolloRX2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApolloRX2.release.xcconfig"; path = "Target Support Files/Pods-ApolloRX2/Pods-ApolloRX2.release.xcconfig"; sourceTree = "<group>"; };
 		D7F52878AAB5EDB57AED0D19 /* Pods-ApolloRX2Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApolloRX2Tests.release.xcconfig"; path = "Target Support Files/Pods-ApolloRX2Tests/Pods-ApolloRX2Tests.release.xcconfig"; sourceTree = "<group>"; };
-		DBBB819B28072D6D00C7C85B /* SearchResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsViewController.swift; sourceTree = "<group>"; };
 		DBF0CA4D28037306008E70EA /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		DBF0CA4F28037329008E70EA /* MedInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedInfoViewController.swift; sourceTree = "<group>"; };
 		F24C69EDC7982FC2088A55F0 /* Pods-ApolloRX2Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApolloRX2Tests.debug.xcconfig"; path = "Target Support Files/Pods-ApolloRX2Tests/Pods-ApolloRX2Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 				8FB7808827EAC6FD002C1827 /* AppDelegate.swift */,
 				8FB7808A27EAC6FD002C1827 /* SceneDelegate.swift */,
 				8FB7808E27EAC6FD002C1827 /* Main.storyboard */,
+				8F8FF88928095C4400160696 /* InformationViewController.swift */,
 				8FEDB8962808A89300015235 /* AccountViewController.swift */,
 				8FEDB89428087DE000015235 /* AccountSettingsViewController.swift */,
 				8FB7C0CB2804F7260010C100 /* Medicine.swift */,
@@ -164,7 +167,7 @@
 				8FB7809627EAC6FF002C1827 /* Info.plist */,
 				DBF0CA4D28037306008E70EA /* SearchViewController.swift */,
 				DBF0CA4F28037329008E70EA /* MedInfoViewController.swift */,
-				DBBB819B28072D6D00C7C85B /* SearchResultsViewController.swift */,
+				8F6D2929280934D700CF53C9 /* MedNameTableViewCell.swift */,
 			);
 			path = ApolloRX2;
 			sourceTree = "<group>";
@@ -453,8 +456,8 @@
 				DBF0CA5028037329008E70EA /* MedInfoViewController.swift in Sources */,
 				8FEDB89528087DE000015235 /* AccountSettingsViewController.swift in Sources */,
 				8FB7808927EAC6FD002C1827 /* AppDelegate.swift in Sources */,
-				DBBB819C28072D6D00C7C85B /* SearchResultsViewController.swift in Sources */,
 				DBF0CA4E28037306008E70EA /* SearchViewController.swift in Sources */,
+				8F6D292A280934D700CF53C9 /* MedNameTableViewCell.swift in Sources */,
 				8FEDB8972808A89300015235 /* AccountViewController.swift in Sources */,
 				8FB7808B27EAC6FD002C1827 /* SceneDelegate.swift in Sources */,
 				8FB7C0CC2804F7260010C100 /* Medicine.swift in Sources */,
@@ -465,6 +468,7 @@
 				8FC62B9528039AAF0041EB91 /* CalendarHelper.swift in Sources */,
 				8F9BA11027EBA1C900061E54 /* HomeViewController.swift in Sources */,
 				8F9BA11227EBA22400061E54 /* SignUpViewController.swift in Sources */,
+				8F8FF88A28095C4500160696 /* InformationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

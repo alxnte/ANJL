@@ -26,6 +26,11 @@ class LoginViewController: UIViewController {
            self.present(alert, animated: true, completion: nil)
 
        }*/
+    /*func table(){
+    let todaysMedicine = PFObject(className: "AccountSettings")
+    todaysMedicine["user"] = PFUser.current()!
+    MedicineCell().medicineLabel.text = todaysMedicine["medicine"]
+    }*/
     
     @IBAction func onSignIn(_ sender: Any) {
         let user = PFUser()
@@ -56,7 +61,7 @@ class LoginViewController: UIViewController {
     
     
     @IBAction func onSignUp(_ sender: Any) {
-        let user = PFUser()
+        /*let user = PFUser()
         user.username = usernameField.text
         user.password = passwordField.text
         
@@ -68,7 +73,7 @@ class LoginViewController: UIViewController {
          }
         
         
-    }
+    }*/
         /*if (user.username != nil && user.password != nil){
             self.performSegue(withIdentifier: "signUpSegue", sender: nil)
         }else{

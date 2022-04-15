@@ -2,10 +2,11 @@
 //  AccountViewController.swift
 //  ApolloRX2
 //
-//  Created by Nubia Johnson on 4/13/22.
+//  Created by Nubia Johnson on 4/14/22.
 //
 
 import UIKit
+import Parse
 
 class AccountViewController: UIViewController {
 
@@ -15,7 +16,11 @@ class AccountViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func logoutButton(_ sender: UIButton) {
+        PFUser.logOut()
+        performSegue(withIdentifier: "logoutSegue", sender: (nil))
+    }
+    
     /*
     // MARK: - Navigation
 

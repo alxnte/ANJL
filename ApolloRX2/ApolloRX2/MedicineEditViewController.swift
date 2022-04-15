@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Parse
 
 class MedicinceEditViewController: UIViewController{
     
@@ -30,7 +31,21 @@ class MedicinceEditViewController: UIViewController{
         
         medList.append(newMedicine)
         //navigationController?.popViewController(animated: true)
-        performSegue(withIdentifier: "saveSegue", sender: (Any).self)
+        
+        
+        let account = PFObject(className: "AccountSettings")
+        account["user"] = PFUser.current()!
+        account["medicine"] = nameTF.text!
+        
+        
+        account.saveInBackground { success, error in
+            if success{
+                self.performSegue(withIdentifier: "saveSegue", sender: nil)
+                print("saved!")
+            } else{
+                print("error!")
+            }
+        }
     }
     
 }

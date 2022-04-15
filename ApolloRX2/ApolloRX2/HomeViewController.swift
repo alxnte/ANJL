@@ -6,8 +6,11 @@
 //
 
 import UIKit
+import Parse
 
     var selectedDate = Date()
+    //var cell = tableView.dequeueReusableCell(withIdentifier: "cellID") as! MedicineCell
+    //var medList = [Medicine]()
 
 class HomeViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UITableViewDelegate, UITableViewDataSource {
 
@@ -21,6 +24,7 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
     
     @IBOutlet weak var monthLabel: UILabel!
     
+    @IBOutlet weak var medicineLabel: UILabel!
     
     
     var totalSquares = [Date]()
@@ -31,7 +35,13 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
 
         setCellsView()
         setWeekView()
+        
+        //MedicineCell().table()
+       
+        
     }
+    
+    
     
     func setCellsView(){
         let width = (collectionView.frame.size.width - 2)/8
@@ -109,19 +119,20 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cellID") as! MedicineCell
+        var cell = tableView.dequeueReusableCell(withIdentifier: "cellID") as! MedicineCell
         let medicine = Medicine().medicineForDate(date: selectedDate)[indexPath.row]
-        
-        
+    
         
         cell.medicineLabel.text = medicine.name + "     " + CalendarHelper().timeString(date: medicine.date)
         
         return cell
     }
     
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         tableView.reloadData()
+        //table()
     }
     
     
